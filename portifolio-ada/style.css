@@ -1,0 +1,241 @@
+
+
+
+body,
+button,
+input,
+select,
+textarea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    background-color: #f7f7f7;
+}
+
+header{
+    background-color: #fff;
+}
+
+header #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+header #navbar .nav-brand{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+header #navbar .nav-list{
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+header #navbar .nav-list .nav-item a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+    color: #777;
+    transition: color  0.3s;
+}
+
+
+header #navbar .haburguer-menu{
+    display: none;
+}
+
+@media (max-width:740px) {
+
+    header #navbar .haburguer-menu{
+    display: block;
+    cursor: pointer;
+}
+header #navbar .nav-list{
+    display: none;
+}
+
+}
+
+
+/* começando a estilizar o main */ 
+
+
+main{
+    margin-top: 6rem;
+}
+
+
+main #banner{
+    display: flex;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+main #banner .banner-content .banner-content-title{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+main #banner .banner-content .banner-content-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 500px;
+    margin-bottom: 38px;
+}
+
+
+main #banner .banner-content .banner-content-btn{
+    background-color: rgb(41, 214, 214);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    
+}
+
+main #banner .banner-content .banner-content-btn:hover{
+    background-color: rgb(32, 179, 179);
+    transition: color  0.3s;
+}
+
+
+
+
+main #banner  .banner-img{
+border-radius: 50%;
+width: 100%;
+max-width: 500px;
+}
+
+
+
+
+
+/* começando a estilizar a seção post */ 
+
+
+section#posts{
+margin-top: 4rem;
+background-color: #edf7fa;
+
+
+}
+
+
+
+#posts .post-content{
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#posts .post-content .posts-content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+#posts .post-content .posts-content-header .section-titulo{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+#posts .post-content .posts-content-header .view-all {
+    text-decoration: none;
+    color: #00a8cc;
+}
+
+#posts .post-content .posts-cards{
+    display: flex;
+    gap: 20px;
+}
+
+
+#posts .post-content .posts-cards .post-card{
+    background: #fff;
+    padding: 24px;
+}
+
+
+#posts .post-content .posts-cards .post-card h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
+
+
+#posts .post-content .posts-cards .post-card span{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    display: block;
+
+
+
+}
+
+
+
+@media (max-width: 920px) {
+    main #banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    main #banner .banner-content{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .posts-cards {
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
